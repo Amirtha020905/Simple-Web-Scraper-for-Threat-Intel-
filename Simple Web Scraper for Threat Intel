@@ -1,0 +1,12 @@
+website_data = """
+Threat Alert: New Ransomware Attack
+Critical Vulnerability Found in Windows
+Phishing Campaign Targets Banking Users
+Linux Security Patch Released
+Zero-Day Exploit Discovered
+"""
+print("=== Threat Intelligence Headlines ===\n")
+headlines = website_data.strip().split("\n")
+for i, headline in enumerate(headlines, start=1):
+    print(f"{i}. {headline}")
+print("\nScraping Completed Successfully!")
